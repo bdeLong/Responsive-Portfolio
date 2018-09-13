@@ -86,7 +86,6 @@ nav {
      overflow: hidden;
      position: relative;
      clear: both;
-     min-height: 100%;
  }
 
  .Section-Title{
@@ -242,7 +241,12 @@ textarea:focus {
 
  /* footer divs */
 
-.sticky-footer {
+
+ .wrapper {
+    min-height: 100%;
+    margin-bottom: -70px;
+  }
+.sticky-footer, .push {
     position: relative;
     margin-top: -70px;
     height: 70px;
@@ -275,12 +279,12 @@ span{
     width: 600px;
     margin: 80px 0 100px 10px;
     background-color: darkslategrey;
-    padding: 0;
+    padding: 0 0 20px 0;
 }
 
 .Section-Title{
     height: 60px;
-    margin: 0 0 20px 10px;
+    margin: 0 10px 20px 10px;
     border-bottom: 2px solid lightgray;
     color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -288,8 +292,8 @@ span{
 
 /* About Me Page */
 #headshot {
-    height: 109px;
-    width: 78px;
+    height: 200px;
+    width: 150px;
     float: left;
     clear: right;
     margin: 0 20px 10px 20px;
@@ -303,6 +307,112 @@ span{
     color: lightgrey;
 }
 
+input {
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    width: 400px;
+    height: 30px;
+    padding: 0px 15px 0px 15px;
+    background-color: lightgrey;
+    color: darkslategrey;
+    border: solid 1px #424242;
+    transition-duration: 0.3s;
+    margin: 10px 25px;
+  }
+
+  textarea {
+    width: 500px;
+    height: 70px;
+    padding: 15px;
+    background-color: lightgrey;
+    color: darkslategrey;
+    font-family: Trebuchet MS;
+    font-size: 16px;
+    border: solid 1px #424242;
+    transition-duration: 0.3s;
+    margin: 10px 25px;
+  }
+
+  .submit {
+    width: 150px;
+    margin: 20px 25px;
+    font-family: Trebuchet MS;
+    font-size: 20px;
+    color: darkslategrey;
+    border: solid 1px #424242;
+    background-color: lightgrey;
+  }
+
  }
- @media screen and (max-width: 768px){}
+ @media screen and (max-width: 768px){
+
+    nav {
+        height: 60px;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    article{
+        width: 600px;
+        margin: 80px auto 100px auto;
+        background-color: darkslategrey;
+        padding: 0 0 20px 0;
+    }
+    
+    
+    /* About Me Page */
+    #headshot {
+        height: 200px;
+        width: 150px;
+        float: left;
+        clear: right;
+        margin: 0 20px 10px 20px;
+    }
+    
+    #about-me {
+        font-size: 9px;
+        line-height: 14px;
+        margin-left: 10px;
+        margin-right: 25px;
+        color: lightgrey;
+    }
+    
+    input {
+        font-family: Trebuchet MS;
+        font-size: 16px;
+        width: 550px;
+        height: 30px;
+        padding: 0px 15px 0px 15px;
+        background-color: lightgrey;
+        color: darkslategrey;
+        border: solid 1px #424242;
+        transition-duration: 0.3s;
+        margin: 10px 25px;
+      }
+    
+      textarea {
+        width: 550px;
+        height: 70px;
+        padding: 15px;
+        background-color: lightgrey;
+        color: darkslategrey;
+        font-family: Trebuchet MS;
+        font-size: 16px;
+        border: solid 1px #424242;
+        transition-duration: 0.3s;
+        margin: 10px 25px;
+      }
+    
+      .submit {
+        width: 150px;
+        margin: 20px 25px;
+        font-family: Trebuchet MS;
+        font-size: 20px;
+        color: darkslategrey;
+        border: solid 1px #424242;
+        background-color: lightgrey;
+      }
+
+
+ }
  @media screen and (max-width: 640px){}
